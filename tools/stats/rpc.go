@@ -56,9 +56,14 @@ func WaitForSyncComplete(ctx context.Context, napi api.FullNode) error {
 				return err
 			}
 
-			log.Printf("Height %d", head.Height())
+			now := time.Now().Unix()
+			log.Printf("Height         %d", head.Height())
+			log.Printf("Now()          %d", now)
+			log.Printf("MinTimestamp() %d", int64(head.MinTimestamp()))
+			log.Printf("BlockDelay     %d", build.BlockDelay)
+			log.Printf("diff           %d", now-int64(head.MinTimestamp()))
 
-			if time.Now().Unix()-int64(head.MinTimestamp()) < build.BlockDelay {
+			if now-int64(head.MinTimestamp()) < build.BlockDelay {
 				return nil
 			}
 		}
