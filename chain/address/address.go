@@ -7,7 +7,6 @@ import (
 	"io"
 	"strconv"
 
-	bls "github.com/filecoin-project/filecoin-ffi"
 	cbor "github.com/ipfs/go-ipld-cbor"
 	"github.com/minio/blake2b-simd"
 	"github.com/multiformats/go-varint"
@@ -16,6 +15,8 @@ import (
 
 	cbg "github.com/whyrusleeping/cbor-gen"
 )
+
+const blsPublicKeyBytes = 48
 
 func init() {
 	cbor.RegisterCborType(addressAtlasEntry)
@@ -231,7 +232,7 @@ func newAddress(protocol Protocol, payload []byte) (Address, error) {
 			return Undef, ErrInvalidPayload
 		}
 	case BLS:
-		if len(payload) != bls.PublicKeyBytes {
+		if len(payload) != blsPublicKeyBytes {
 			return Undef, ErrInvalidPayload
 		}
 	default:
