@@ -7,6 +7,9 @@ import (
 
 	"github.com/filecoin-project/lotus/lib/statestore"
 	"github.com/filecoin-project/lotus/node/modules/helpers"
+	"github.com/filecoin-project/lotus/paych"
+	retrievalmarket "github.com/filecoin-project/lotus/retrieval"
+	retrievalimpl "github.com/filecoin-project/lotus/retrieval/impl"
 	"github.com/ipfs/go-bitswap"
 	"github.com/ipfs/go-bitswap/network"
 	"github.com/libp2p/go-libp2p-core/host"
@@ -22,6 +25,7 @@ import (
 
 	"github.com/filecoin-project/lotus/chain/deals"
 	"github.com/filecoin-project/lotus/datatransfer"
+	payapi "github.com/filecoin-project/lotus/node/impl/paych"
 	"github.com/filecoin-project/lotus/node/modules/dtypes"
 	"github.com/filecoin-project/lotus/node/repo"
 )
@@ -79,4 +83,9 @@ func ClientDAG(mctx helpers.MetricsCtx, lc fx.Lifecycle, ibs dtypes.ClientBlocks
 	})
 
 	return dag
+}
+
+// RetrievalClient creates a new retrieval client attached to the client blockstore
+func RetrievalClient(h host.Host, bs dtypes.ClientBlockstore, pmgr *paych.Manager, payapi payapi.PaychAPI) retrievalmarket.RetrievalClient {
+	return retrievalimpl.NewClient(h, bs, pmgr, payapi)
 }
