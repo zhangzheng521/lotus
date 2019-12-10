@@ -43,8 +43,9 @@ import (
 	"github.com/filecoin-project/lotus/node/repo"
 	"github.com/filecoin-project/lotus/paych"
 	"github.com/filecoin-project/lotus/peermgr"
-	"github.com/filecoin-project/lotus/retrieval"
+	retrievalmarket "github.com/filecoin-project/lotus/retrieval"
 	"github.com/filecoin-project/lotus/retrieval/discovery"
+	retrievalimpl "github.com/filecoin-project/lotus/retrieval/impl"
 	"github.com/filecoin-project/lotus/storage"
 	"github.com/filecoin-project/lotus/storage/sectorblocks"
 )
@@ -220,9 +221,9 @@ func Online() Option {
 			Override(HeadMetricsKey, metrics.SendHeadNotifs("")),
 
 			Override(new(*discovery.Local), discovery.NewLocal),
-			Override(new(discovery.PeerResolver), modules.RetrievalResolver),
+			Override(new(retrievalmarket.PeerResolver), modules.RetrievalResolver),
 
-			Override(new(*retrieval.Client), retrieval.NewClient),
+			Override(new(retrievalmarket.RetrievalClient), retrievalimpl.NewClient),
 			Override(new(dtypes.ClientDealStore), modules.NewClientDealStore),
 			Override(new(dtypes.ClientDataTransfer), modules.NewClientDAGServiceDataTransfer),
 			Override(new(*deals.ClientRequestValidator), deals.NewClientRequestValidator),
@@ -244,7 +245,7 @@ func Online() Option {
 
 			Override(new(dtypes.StagingDAG), modules.StagingDAG),
 
-			Override(new(*retrieval.Miner), retrieval.NewMiner),
+			Override(new(retrievalmarket.RetrievalProvider), retrievalimpl.NewProvider),
 			Override(new(dtypes.ProviderDealStore), modules.NewProviderDealStore),
 			Override(new(dtypes.ProviderDataTransfer), modules.NewProviderDAGServiceDataTransfer),
 			Override(new(*deals.ProviderRequestValidator), deals.NewProviderRequestValidator),
