@@ -556,7 +556,7 @@ func (t *ClientDeal) MarshalCBOR(w io.Writer) error {
 		return err
 	}
 
-	// t.t.PayloadCid (cid.Cid) (struct)
+	// t.PayloadCid (cid.Cid) (struct)
 
 	if err := cbg.WriteCid(w, t.PayloadCid); err != nil {
 		return xerrors.Errorf("failed to write cid field t.PayloadCid: %w", err)
@@ -644,7 +644,7 @@ func (t *ClientDeal) UnmarshalCBOR(r io.Reader) error {
 		return fmt.Errorf("wrong type for uint64 field")
 	}
 	t.DealID = uint64(extra)
-	// t.t.PayloadCid (cid.Cid) (struct)
+	// t.PayloadCid (cid.Cid) (struct)
 
 	{
 
