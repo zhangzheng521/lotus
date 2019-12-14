@@ -6,7 +6,7 @@
   },
   "v20-proof-of-spacetime-election-5f585aca354eb68e411c8582ed0efd800792430e4e76d73468c4fc03f1a8d6d2.vk": {
     "cid": "QmbNGx7pNbGiEr8ykoHxVXHW2LNSmGdsxKtj1onZCyguCX",
-    "digest": "0227ae7df4f2affe529ebafbbc7540ee",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 34359738368
   },
   "v20-proof-of-spacetime-election-a4e18190d4b4657ba1b4d08a341871b2a6f398e327cb9951b28ab141fbdbf49d.params": {
@@ -16,7 +16,7 @@
   },
   "v20-proof-of-spacetime-election-a4e18190d4b4657ba1b4d08a341871b2a6f398e327cb9951b28ab141fbdbf49d.vk": {
     "cid": "QmWpmrhCGVcfqLyqp5oGAnhPmCE5hGTPaauHi25mpQwRSU",
-    "digest": "91fac550e1f9bccab213830bb0c85bd6",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 1024
   },
   "v20-proof-of-spacetime-election-a9eb6d90b896a282ec2d3a875c6143e3fcff778f0da1460709e051833651559b.params": {
@@ -26,7 +26,7 @@
   },
   "v20-proof-of-spacetime-election-a9eb6d90b896a282ec2d3a875c6143e3fcff778f0da1460709e051833651559b.vk": {
     "cid": "QmPvZoMKofw6eDhDg5ESJA2QAZP8HvM6qMQk7fw4pq9bQf",
-    "digest": "0df62745fceac922e3e70847cfc70b52",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 1073741824
   },
   "v20-proof-of-spacetime-election-bf872523641b1de33553db2a177df13e412d7b3b0103e6696ae0a1cf5d525259.params": {
@@ -36,7 +36,7 @@
   },
   "v20-proof-of-spacetime-election-bf872523641b1de33553db2a177df13e412d7b3b0103e6696ae0a1cf5d525259.vk": {
     "cid": "QmZa5FX27XyiEXQQLQpHqtMJKLzrcY8wMuj3pxzmSimSyu",
-    "digest": "7f796d3a0f13499181e44b5eee0cc744",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 16777216
   },
   "v20-proof-of-spacetime-election-ffc3fb192364238b60977839d14e3154d4a98313e30d46694a12af54b6874975.params": {
@@ -46,7 +46,7 @@
   },
   "v20-proof-of-spacetime-election-ffc3fb192364238b60977839d14e3154d4a98313e30d46694a12af54b6874975.vk": {
     "cid": "QmUxvPu4xdVmjMFihUKoYyEdXBqxsXkvmxRweU7KouWHji",
-    "digest": "95eb89588e9d1832aca044c3a13178af",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 268435456
   },
   "v20-stacked-proof-of-replication-117839dacd1ef31e5968a6fd13bcd6fa86638d85c40c9241a1d07c2a954eb89b.params": {
@@ -56,7 +56,7 @@
   },
   "v20-stacked-proof-of-replication-117839dacd1ef31e5968a6fd13bcd6fa86638d85c40c9241a1d07c2a954eb89b.vk": {
     "cid": "Qme1hn6QT1covfoUFGDZkqoE1pMTax9FNW3nWWmTNqFe7y",
-    "digest": "872e244d86499fd659082e3bcf3f13e7",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 268435456
   },
   "v20-stacked-proof-of-replication-b46f3a1051afbb67f70aae7082da95def62eee943662f3e1bf69837fb08aaae4.params": {
@@ -66,7 +66,7 @@
   },
   "v20-stacked-proof-of-replication-b46f3a1051afbb67f70aae7082da95def62eee943662f3e1bf69837fb08aaae4.vk": {
     "cid": "QmTDGynCmnbaZNBP3Bv3F3duC3ecKRubCKeMUiQQZYbGpF",
-    "digest": "c752e070a6b7aa8b79aa661a6b600b55",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 34359738368
   },
   "v20-stacked-proof-of-replication-e71093863cadc71de61f38311ee45816633973bbf34849316b147f8d2e66f199.params": {
@@ -76,7 +76,7 @@
   },
   "v20-stacked-proof-of-replication-e71093863cadc71de61f38311ee45816633973bbf34849316b147f8d2e66f199.vk": {
     "cid": "QmYHW3zhQouDP4okFbXSsRMcZ8bokKGvzxqbv7ZrunPMiG",
-    "digest": "b2f09a0ccb62da28c890d5b881c8dcd2",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 1024
   },
   "v20-stacked-proof-of-replication-e99a585174b6a45b254ba4780d72c89ad808c305c6d11711009ade4f39dba8e9.params": {
@@ -86,7 +86,7 @@
   },
   "v20-stacked-proof-of-replication-e99a585174b6a45b254ba4780d72c89ad808c305c6d11711009ade4f39dba8e9.vk": {
     "cid": "QmWReGfbuoozNErbskmFvqV4q36BY6F2WWb4cVFc3zoYkA",
-    "digest": "20d58a3fae7343481f8298a2dd493dd7",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 1073741824
   },
   "v20-stacked-proof-of-replication-f571ee2386f4c65a68e802747f2d78691006fc81a67971c4d9641403fffece16.params": {
@@ -96,7 +96,7 @@
   },
   "v20-stacked-proof-of-replication-f571ee2386f4c65a68e802747f2d78691006fc81a67971c4d9641403fffece16.vk": {
     "cid": "QmaKtFLShnhMGVn7P9UsHjkgqtqRFSwCStqqykBN7u8dax",
-    "digest": "834408e5c3fce6ec5d1bf64e64cee94e",
+    "digest": "f1e2bc330b4a4f3616f59f0a3af94d3e",
     "sector_size": 16777216
   }
 }
