@@ -23,7 +23,7 @@ import (
 var log = logging.Logger("build")
 
 //const gateway = "http://198.211.99.118/ipfs/"
-const gateway = "http://localhost:8080 lotus fetch-params"
+const gateway = "https://ipfs.greyh.at/ipfs/"
 //const gateway = "https://ipfs.io/ipfs/"
 const paramdir = "/var/tmp/filecoin-proof-parameters"
 const dirEnv = "FIL_PROOFS_PARAMETER_CACHE"
